@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 8 Studio Deliverable Report - B25CS0311</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1a202c;
+            line-height: 1.5;
+            font-size: 11pt;
+            margin: 0;
+            padding: 0;
+        }
+        .page {
+            page-break-after: always;
+            box-sizing: border-box;
+            height: 100%;
+        }
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        .header {
+            border-bottom: 2px solid #2b6cb0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        .title {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #1a365d;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 12pt;
+            color: #2b6cb0;
+            margin-top: 4px;
+        }
+        .meta-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        .meta-table td {
+            padding: 6px 10px;
+            border: 1px solid #e2e8f0;
+            font-size: 10pt;
+        }
+        .meta-table td.label {
+            background-color: #f7fafc;
+            font-weight: bold;
+            color: #2d3748;
+            width: 25%;
+        }
+        .section-heading {
+            font-size: 13pt;
+            font-weight: bold;
+            color: #2c5282;
+            border-left: 4px solid #3182ce;
+            padding-left: 8px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        table.summary-matrix {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9.5pt;
+            margin-bottom: 15px;
+        }
+        table.summary-matrix th {
+            background-color: #2b6cb0;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #2b6cb0;
+        }
+        table.summary-matrix td {
+            padding: 7px 8px;
+            border: 1px solid #cbd5e0;
+        }
+        table.summary-matrix tr:nth-child(even) {
+            background-color: #f7fafc;
+        }
+        .badge-box {
+            border: 2px dashed #4299e1;
+            background-color: #ebf8ff;
+            border-radius: 6px;
+            padding: 12px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .badge-box img {
+            max-width: 250px;
+            max-height: 120px;
+        }
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .screenshot-card {
+            border: 1px solid #cbd5e0;
+            border-radius: 5px;
+            padding: 6px;
+            background: #ffffff;
+            font-size: 8.5pt;
+        }
+        .screenshot-card h4 {
+            margin: 0 0 5px 0;
+            color: #2c5282;
+            font-size: 9.5pt;
+        }
+        .screenshot-card img {
+            width: 100%;
+            height: 110px;
+            object-fit: contain;
+            border: 1px solid #edf2f7;
+            background: #f7fafc;
+        }
+        .reflective-box {
+            background-color: #f7fafc;
+            border-left: 4px solid #38a169;
+            padding: 12px 15px;
+            font-size: 10pt;
+            text-align: justify;
+            color: #2d3748;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 8.5pt;
+            color: #718096;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1 OF PDF REPORT -->
+    <div class="page">
+        <div class="header">
+            <div class="title">Studio Activity 8 Deliverable Report</div>
+            <div class="subtitle">HackerRank Algorithmic Problem-Solving & Portfolio Integration</div>
+        </div>
+
+        <table class="meta-table">
+            <tr>
+                <td class="label">Course & Sem</td>
+                <td>3rd Semester B.Tech (Computer Science & Engineering)</td>
+                <td class="label">Portfolio Code</td>
+                <td><strong>B25CS0311</strong></td>
+            </tr>
+            <tr>
+                <td class="label">Student Name</td>
+                <td><code>Tejas H</code></td>
+                <td class="label">Roll Number</td>
+                <td><code>B25CS0311</code></td>
+            </tr>
+            <tr>
+                <td class="label">GitHub Repo URL</td>
+                <td colspan="3"><a href="https://github.com/tejash0980000p-byte/-HackerRank-3rdSem-Portfolio">https://github.com/tejash0980000p-byte/-HackerRank-3rdSem-Portfolio</a></td>
+            </tr>
+            <tr>
+                <td class="label">HackerRank Profile</td>
+                <td colspan="3"><a href="https://www.hackerrank.com/tejash0980000p">https://www.hackerrank.com/tejash0980000p</a></td>
+            </tr>
+        </table>
+
+        <div class="section-heading">1. Mandatory HackerRank Problem Complexity Analysis</div>
+        <table class="summary-matrix">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Problem Name</th>
+                    <th>Topic / Category</th>
+                    <th>Target Time & Space</th>
+                    <th>Achieved Complexity</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1</strong></td>
+                    <td>Diagonal Difference</td>
+                    <td>2D Matrices</td>
+                    <td>Time: O(N)<br>Space: O(1)</td>
+                    <td>Time: O(N)<br>Space: O(1)</td>
+                    <td><strong style="color: green;">Accepted</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>2</strong></td>
+                    <td>Dynamic Array</td>
+                    <td>Data Structures / Vectors</td>
+                    <td>Time: O(N + Q)<br>Space: O(N)</td>
+                    <td>Time: O(N + Q)<br>Space: O(N + Q)</td>
+                    <td><strong style="color: green;">Accepted</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>3</strong></td>
+                    <td>Time Conversion</td>
+                    <td>Strings & Logic</td>
+                    <td>Time: O(1)<br>Space: O(1)</td>
+                    <td>Time: O(1)<br>Space: O(1)</td>
+                    <td><strong style="color: green;">Accepted</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>4</strong></td>
+                    <td>Compare the Triplets</td>
+                    <td>Basic Implementation</td>
+                    <td>Time: O(1)<br>Space: O(1)</td>
+                    <td>Time: O(1)<br>Space: O(1)</td>
+                    <td><strong style="color: green;">Accepted</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>5</strong></td>
+                    <td>Sparse Arrays</td>
+                    <td>Hash Maps / Strings</td>
+                    <td>Time: O(N + Q)<br>Space: O(N)</td>
+                    <td>Time: O(N + Q)<br>Space: O(N)</td>
+                    <td><strong style="color: green;">Accepted</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-heading">2. HackerRank Verified Badge Artifact</div>
+        <div class="badge-box">
+            <strong>HackerRank 3-Star Problem Solving / C Badge</strong><br><br>
+            <img src="docs/screenshots/hackerrank_badge.png" alt="[Insert HackerRank 3-Star Badge Screenshot Here]">
+        </div>
+
+        <div class="footer">Page 1 of 2 — Activity 8 Deliverable (B25CS0311)</div>
+    </div>
+
+    <!-- PAGE 2 OF PDF REPORT -->
+    <div class="page">
+        <div class="header">
+            <div class="title">Studio Activity 8 Deliverable Report (Contd.)</div>
+            <div class="subtitle">Screenshots of Accepted Submissions & Reflective Summary</div>
+        </div>
+
+        <div class="section-heading">3. Screenshots of Accepted HackerRank Submissions</div>
+        <div class="screenshot-grid">
+            <div class="screenshot-card">
+                <h4>1. Diagonal Difference</h4>
+                <img src="docs/screenshots/01_diagonal_difference_accepted.png" alt="[Diagonal Difference Screenshot]">
+            </div>
+            <div class="screenshot-card">
+                <h4>2. Dynamic Array</h4>
+                <img src="docs/screenshots/02_dynamic_array_accepted.png" alt="[Dynamic Array Screenshot]">
+            </div>
+            <div class="screenshot-card">
+                <h4>3. Time Conversion</h4>
+                <img src="docs/screenshots/03_time_conversion_accepted.png" alt="[Time Conversion Screenshot]">
+            </div>
+            <div class="screenshot-card">
+                <h4>4. Compare the Triplets</h4>
+                <img src="docs/screenshots/04_compare_triplets_accepted.png" alt="[Compare Triplets Screenshot]">
+            </div>
+        </div>
+        <div class="screenshot-card" style="margin-bottom: 15px;">
+            <h4>5. Sparse Arrays</h4>
+            <img src="docs/screenshots/05_sparse_arrays_accepted.png" alt="[Sparse Arrays Screenshot]">
+        </div>
+
+        <div class="section-heading">4. Reflective Summary on Algorithmic Optimization (200 Words)</div>
+        <div class="reflective-box">
+            During Activity 8, I explored foundational algorithmic paradigms in linear data structures, 2D matrix operations, string parsing, and hashing techniques in C. 
+            <br><br>
+            Solving <strong>Diagonal Difference</strong> reinforced matrix indexing efficiency, achieving O(N) time complexity by accumulating primary (A[i][i]) and secondary (A[i][N-1-i]) diagonal elements in a single linear pass without auxiliary space (O(1)). In <strong>Dynamic Array</strong>, managing dynamic sequence vectors required implementing geometric array resizing via realloc, guaranteeing O(1) amortized insertion time per query while operating under O(N+Q) space. The <strong>Time Conversion</strong> challenge highlighted constant-time O(1) string parsing and conditional arithmetic logic to format 12-hour AM/PM representations into 24-hour military time without overhead. <strong>Compare the Triplets</strong> demonstrated constant O(1) element-wise comparison and score accumulation. Finally, <strong>Sparse Arrays</strong> highlighted the contrast between brute-force O(N × Q) string search and optimal hash map frequency mapping. By constructing a custom chaining hash table using the djb2 algorithm, query lookup efficiency was reduced to O(1) expected time (O(N+Q) total), avoiding redundant comparisons.
+            <br><br>
+            Overall, this activity deepened my practical expertise in selecting optimal data structures, managing heap dynamic memory in C safely, and balancing space-time trade-offs for scalable software engineering.
+        </div>
+
+        <div class="footer">Page 2 of 2 — Activity 8 Deliverable (B25CS0311)</div>
+    </div>
+
+</body>
+</html>
