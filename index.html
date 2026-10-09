@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tejash | Portfolio Building</title>
+<style>
+:root{--bg:#0b1120;--card:#111a2e;--text:#e8eefc;--muted:#a9b5cc;--blue:#60a5fa;--line:#26334d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+nav{position:sticky;top:0;background:#0b1120e8;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:1.3rem}.logo span{color:var(--blue)}nav ul{display:flex;gap:22px;list-style:none;color:var(--muted);padding:0;margin:0}nav a:hover{color:white}
+.hero{padding:100px 0 80px}.grid{display:grid;grid-template-columns:1.4fr .6fr;gap:45px;align-items:center}.tag{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}
+h1{font-size:clamp(3rem,7vw,5.5rem);line-height:1;letter-spacing:-.06em;margin:12px 0}h2{font-size:clamp(2rem,4vw,3rem);margin:8px 0 25px}h3{margin:7px 0 10px}.hero p,.card p{color:var(--muted)}.gradient{background:linear-gradient(90deg,#fff,#93c5fd,#67e8f9);color:transparent;background-clip:text}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;padding:11px 16px;border:1px solid var(--line);border-radius:11px;font-weight:800}.primary{background:var(--blue);color:#07111f;border-color:transparent}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:25px}.profile .avatar{width:88px;height:88px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#2563eb,#38bdf8);font-size:2.2rem;font-weight:900;margin-bottom:18px}.meta{display:grid;gap:10px;margin-top:20px}.meta div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:8px;gap:12px}.muted{color:var(--muted)}
+section{padding:75px 0}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.projects,.skills,.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{min-height:270px;display:flex;flex-direction:column}.project p{flex:1}.pills{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}.pill{border:1px solid var(--line);border-radius:99px;padding:4px 9px;font-size:.78rem;color:#cbd5e1}
+.timeline{display:grid;gap:0}.item{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}.item:last-child{border:0}.label{color:var(--blue);font-weight:800}
+.goal{background:linear-gradient(135deg,#2563eb2e,#38bdf80a);border-color:#60a5fa55}.goal p{max-width:760px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted)}
+@media(max-width:800px){.grid,.two,.projects,.skills,.posts{grid-template-columns:1fr}nav ul{display:none}.item{grid-template-columns:1fr;gap:4px}.hero{padding-top:70px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="logo" href="#home">Tejash<span>.</span></a><ul><li><a href="#about">About</a></li><li><a href="#journey">Journey</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#blog">Blog</a></li></ul></div></nav>
+
+<header class="hero" id="home"><div class="wrap grid">
+<div><div class="tag">B.Tech CSIT · 3rd Semester · SRN R25EJ161</div>
+<h1>Building my path in <span class="gradient">software engineering.</span></h1>
+<p>I’m Tejash, a B.Tech Computer Science & Information Technology student focused on software engineering fundamentals, algorithms, version control, collaborative development and AI-assisted workflows.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View my work</a><a class="btn" href="https://github.com/tejash0980000p-byte" target="_blank">GitHub ↗</a></div></div>
+<aside class="card profile"><div class="avatar">T</div><h2 style="font-size:1.5rem;margin:0">Tejash</h2><p>Computer Science & Information Technology</p><div class="meta"><div><span class="muted">SRN</span><b>R25EJ161</b></div><div><span class="muted">Branch</span><b>B.Tech CSIT</b></div><div><span class="muted">Semester</span><b>3rd Sem</b></div><div><span class="muted">GitHub</span><a href="https://github.com/tejash0980000p-byte" target="_blank">tejash0980000p-byte ↗</a></div></div></aside>
+</div></header>
+
+<section id="about"><div class="wrap"><div class="tag">01 · About</div><h2>A student learning by building.</h2><div class="two"><article class="card"><h3>Who I am</h3><p>I am a CSIT student developing strong foundations in software engineering, algorithms, version control and collaborative development. I use AI-assisted workflows to create clean web interfaces and present my technical work.</p></article><article class="card"><h3>My goal</h3><p>My goal is to secure a software engineering internship by strengthening DSA, maintaining a structured LeetCode repository and progressing toward full-stack web development.</p></article></div></div></section>
+
+<section id="journey"><div class="wrap"><div class="tag">02 · Learning Journey</div><h2>From setup to problem solving.</h2><div class="card timeline">
+<div class="item"><div class="label">Development Setup</div><div><h3>Built my local workspace</h3><p>Configured VS Code with Prettier, ESLint and Live Server while learning command-line navigation and file execution.</p></div></div>
+<div class="item"><div class="label">Version Control</div><div><h3>Started with Git & GitHub</h3><p>Initialized repositories and practiced remote push/pull workflows.</p></div></div>
+<div class="item"><div class="label">Collaboration</div><div><h3>Practiced pair programming</h3><p>Used VS Code Live Share and GitLens for collaborative coding, authorship tracking, pull requests and merge conflicts.</p></div></div>
+<div class="item"><div class="label">Algorithms</div><div><h3>Documented LeetCode practice</h3><p>Created a solutions repository for algorithmic problem solving in C++ and Python with complexity analysis.</p></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><div class="tag">03 · Projects</div><h2>Selected technical artifacts.</h2><div class="projects">
+<article class="card project"><div class="tag">PROJECT 01</div><h3>Hello World Repo</h3><p>GitHub setup artifact covering VS Code initialization, local repository setup and publishing a first repository.</p><div class="pills"><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span></div><a class="btn" href="https://github.com/tejash0980000p-byte/hello-world" target="_blank">Open repository ↗</a></article>
+<article class="card project"><div class="tag">PROJECT 02</div><h3>Pair Programming Log</h3><p>Collaborative development artifact using VS Code Live Share and GitLens, focused on authorship, pull requests and merge conflicts.</p><div class="pills"><span class="pill">Live Share</span><span class="pill">GitLens</span><span class="pill">Git</span></div><span class="btn">Documented artifact</span></article>
+<article class="card project"><div class="tag">PROJECT 03</div><h3>LeetCode Solutions Repo</h3><p>Structured collection of algorithmic solutions in C++ and Python with problem breakdowns and complexity analysis.</p><div class="pills"><span class="pill">C++</span><span class="pill">Python</span><span class="pill">DSA</span></div><a class="btn" href="https://github.com/tejash0980000p-byte/leetcode-solutions" target="_blank">Open repository ↗</a></article>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><div class="tag">04 · Skills</div><h2>My current toolkit.</h2><div class="skills">
+<article class="card"><h3>Languages</h3><div class="pills"><span class="pill">C</span><span class="pill">C++</span><span class="pill">Python</span><span class="pill">JavaScript ES6+</span><span class="pill">HTML5</span><span class="pill">CSS3</span></div></article>
+<article class="card"><h3>Tools & Platforms</h3><div class="pills"><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span><span class="pill">GitLens</span><span class="pill">Live Share</span><span class="pill">GitHub Pages</span><span class="pill">AI Assistants</span></div></article>
+<article class="card"><h3>Core Competencies</h3><div class="pills"><span class="pill">DSA</span><span class="pill">OOP</span><span class="pill">Version Control</span><span class="pill">Prompt Engineering</span></div></article>
+</div></div></section>
+
+<section id="blog"><div class="wrap"><div class="tag">05 · Blog</div><h2>Notes from my learning process.</h2><div class="posts">
+<article class="card"><div class="tag">Reflection</div><h3>Why precise prompts matter</h3><p>AI-assisted development improves when requirements, constraints and exact data are clearly specified.</p></article>
+<article class="card"><div class="tag">Learning</div><h3>Learning Git through practice</h3><p>Repositories, remote workflows, pull requests and conflict resolution turn version control into a practical engineering skill.</p></article>
+<article class="card"><div class="tag">Goal</div><h3>Building toward an internship</h3><p>My roadmap centers on DSA, consistent LeetCode documentation and eventually building full-stack applications.</p></article>
+</div></div></section>
+
+<section><div class="wrap"><div class="card goal"><div class="tag">06 · Next Goal</div><h2>Turn learning into real software.</h2><p>Strengthen DSA, grow my project portfolio and improve my software engineering workflow while working toward an internship.</p><a class="btn primary" href="https://github.com/tejash0980000p-byte" target="_blank">Visit GitHub ↗</a></div></div></section>
+<footer><div class="wrap">© 2026 Tejash · B.Tech CSIT · SRN R25EJ161</div></footer>
+</body></html>
